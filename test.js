@@ -17,7 +17,7 @@ function f(){
       console.log(err);
       return;
     }
-    conn.query("s", function(err,recordset){
+    conn.query("select * from employees", function(err,recordset){
       if(err){
         console.log(err);
       }
